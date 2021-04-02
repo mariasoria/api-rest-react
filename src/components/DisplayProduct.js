@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Product = ({item}) => {
+const DisplayProduct = ({item}) => {
     return (
         <ul key={item._id}><strong>Name: </strong> {item.name}
             <li key={item.category}><strong>Category: </strong> {item.category}</li>
@@ -10,4 +10,4 @@ const Product = ({item}) => {
     );
 }
 
-export default Product;
+export default DisplayProduct;

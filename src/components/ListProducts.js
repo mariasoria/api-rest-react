@@ -1,11 +1,11 @@
 import React, {Component} from 'react';
-import Product from './Product';
+import DisplayProduct from './DisplayProduct';
 
 const myHeaders = new Headers();
 myHeaders.append('authorization', `Bearer ${localStorage.token}`);
 
 
-class DisplayProducts extends Component {
+class ListProducts extends Component {
 
     constructor(){
         super();
@@ -34,7 +34,7 @@ class DisplayProducts extends Component {
     
     renderProductsDisplayer = (products) => {
         return products.map(product => 
-            <Product item = {product}></Product>
+            <DisplayProduct item = {product}></DisplayProduct>
         )
     }
 
@@ -59,4 +59,4 @@ class DisplayProducts extends Component {
 }
 
 
-export default DisplayProducts;
+export default ListProducts;

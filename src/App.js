@@ -9,7 +9,7 @@ import {
 } from 'react-router-dom';
 import './App.css';
 import LogIn from './components/Login';
-import DisplayProducts from './components/DisplayProducts';
+import ListProducts from './components/ListProducts';
 //import RemoveProduct from './components/RemoveProduct';
 import UpdateProduct from  './components/UpdateProduct';
 //import AddProduct from './components/AddProduct';
@@ -38,7 +38,7 @@ function App() {
                     <LogIn></LogIn>
                 </Route>
                 <Route path="/api/products">
-                    <DisplayProducts></DisplayProducts>
+                    <ListProducts></ListProducts>
                 </Route>
                 <Route path="/api/product/:productId">
                     <UpdateProduct></UpdateProduct>

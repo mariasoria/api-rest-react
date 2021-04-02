@@ -44,3 +44,7 @@
 h1 {
   color: #282c34;
 }
+
+ul {
+  list-style: none;
+}
